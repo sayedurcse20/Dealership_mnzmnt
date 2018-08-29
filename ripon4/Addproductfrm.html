@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>নতুন পণ্য যুক্ত</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <center><h2>নতুন পণ্য যুক্ত করুন<h2></center>
+  <form class="form-horizontal" action="action_page.php" method="post">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Product">পন্যের নাম:</label>
+      <div class="col-sm-6">
+        <input type="Product" class="form-control" id="Product" placeholder="পন্যের নাম যুক্ত করুন" name="Product">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Prize">পিস মূল্য:</label>
+      <div class="col-sm-4">          
+        <input type="Prize" class="form-control" id="Prize" placeholder="পন্যের পিস মূল্য যুক্ত করুন" name="Prize">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Stock">স্টক সংখ্যা :</label>
+      <div class="col-sm-4">          
+        <input type="Stock" class="form-control" id="Stock" placeholder="পন্যের স্টক সংখ্যা যুক্ত করুন" name="Stock">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>		
+		<a href='ProductListUpdate.php' class="btn btn-primary">Cancel</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
